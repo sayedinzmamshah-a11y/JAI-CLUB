@@ -1,22 +1,76 @@
 
-<script>
-if(localStorage.getItem("loggedIn") !== "true"){
-    window.location.href = "login.html";
+<s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAI CLUB</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:linear-gradient(180deg,#2b1055,#000);
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
-</script>
 
-<div class="header">
-    <h1>JAI CLUB</h1>
-    <p>Ultimate Gaming Experience</p>
+.container{
+width:90%;
+max-width:400px;
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:none;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#7c4dff;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.9;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>JAI CLUB</h1>
+
+<input type="text" placeholder="Phone Number">
+<input type="password" placeholder="Password">
+<input type="password" placeholder="Confirm Password">
+<input type="text" placeholder="Invite Code">
+
+<button>Register</button>
+
 </div>
 
-<div class="card">
-    <h2>Featured Games</h2>
-    <p>Wingo • K3 • 5D • Aviator</p>
-    <p>
-        Explore exciting game modes, modern design,
-        smooth gameplay and an immersive gaming experience.
-    </p>
-
-    <button class="btn">Get Started</button>
-</div>
+</body>
+</html>
